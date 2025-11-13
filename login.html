@@ -6,15 +6,15 @@
  <body>
    <h1>Login</h1>
    <input id="username" placeholder="Enter username">
-    <button onclick="logIn()">Submit</button>
    <script>
      function logIn() {
-         if (document.getElementById("username").value === "guest") {
+          if (document.getElementById("username").value === "guest") {
               window.location.href = "success.html";
             } else {
               alert("Incorrect username. Please try again.");
             }
          }
      </script>
+       <button onclick="logIn()">Submit</button>
    </body>
 </html>

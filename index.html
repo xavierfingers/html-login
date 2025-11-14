@@ -1,11 +1,12 @@
 <html>
  <body>
-    <div class="header">
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <div class="grid text-3xl  mx-auto width-auto height-auto">
    <h1>HTMX app</h1>
    <title>HTMX app</title>
    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
-    </div>
- <div class="login">
+ </div>
+ <div class="text-xl width-auto underline height-auto padding-0 grid">
    <button hx-get="/login.html">
    Login
     </button>
@@ -13,9 +14,10 @@
     GitHub
    </button>
  </div>
- <style>
+ <style type="text/tailwindcss">
     body {
-       background-color: brown;
+       background-color: white;
+  }
    .login { 
       color: grey;
       display: grid;
@@ -23,7 +25,7 @@
     }
       .header {
          display: flex;
-         color: beige;
+         color: black;
          margin: auto;
          width: auto;
          height: auto;

@@ -1,13 +1,35 @@
 <html>
  <body>
+    <div class="header">
    <h1>HTMX app</h1>
    <title>HTMX app</title>
    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    </div>
+ <div class="login">
    <button hx-get="/login.html">
    Login
     </button>
    <button hx-get="/github.html">
     GitHub
    </button>
+ </div>
+ <style>
+    body {
+       background-color: brown;
+   .login { 
+      color: grey;
+      display: grid;
+      width: auto;
+    }
+      .header {
+         display: flex;
+         color: beige;
+         margin: auto;
+         width: auto;
+         height: auto;
+         justify-content: center;
+        align-items: center;
+    }
+    </style>
   </body>
 </html>
